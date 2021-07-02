@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Listas de Clientes</h1>
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>IdPersona</th>
+                    <th>Nombre</th>
+                    <th>Apaterno</th>
+                    <th>Amaterno</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Carlos</td>
+                    <td>Gutierrez</td>
+                    <td>Garcia</td>
+                    <td>Hombre</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Magdalena</td>
+                    <td>Ramirez</td>
+                    <td>Martell</td>
+                    <td>Mujer</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Antonio</td>
+                    <td>Garay</td>
+                    <td>Espinoza</td>
+                    <td>Hombre</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yan</td>
+                    <td>Gomez</td>
+                    <td>Ordaz</td>
+                    <td>Hombre</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class=" btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#mymodal">Nuevo Cliente</button>
+        <button type="button" class=" btn btn-outline-primary btn-lg">Editar Cliente</button>
+        <button type="button" class=" btn btn-outline-danger btn-lg">Eliminar Cliente</button>
+        <!-- Modal -->
+<div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrar Clientes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+              <label class="form-label"  for="nombre">Nombre</label>
+              <input class="form-control" type="text" name="nombre" placeholder="Escribe tu Nombre">
+              <label class="form-label"  for="aparteno">Apaterno</label>
+              <input class="form-control" type="text" name="aparteno" placeholder="Escribe tu Ap Paterno">
+              <label class="form-label"  for="amarteno">Amaterno</label>
+              <input class="form-control" type="text" name="amarteno" placeholder="Escribe tu Ap Materno">
+
+              <label class="form-label" for="sex">Sexo</label>
+              <select class="form-select" name="sexo">
+                <option selected>Open this select menu</option>
+                <option value="m">Masculino</option>
+                <option value="f">Femenino</option>
+              </select>
+              <label class="form-label" for="edad">Edad</label>
+              <input class="form-control" type="text" name="Edad" placeholder="Escriba su Edad">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
